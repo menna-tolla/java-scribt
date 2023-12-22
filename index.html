@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Document</title>
+         <!-- link-icon-- -->
+         <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"
+       />
+       <link rel="preconnect" href="https://fonts.googleapis.com" />
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+       <link
+         href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Roboto:wght@700&display=swap"
+         rel="stylesheet"
+       />
+       <link rel="preconnect" href="https://fonts.googleapis.com" />
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+       <link
+         href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Open+Sans:ital,wght@0,300;1,300&family=Roboto:wght@700&display=swap"
+         rel="stylesheet"
+       />
+       <!-- -- -->
+       <link rel="stylesheet" href="./index.css">
+       <link rel="stylesheet" href="./css/bootstrap.min.css">
+    </head>
+<body>
+<main class="vh-100">
+  <div class="container  py-5 ">
+    <h1>Bookmarker</h1>
+    <div class="bookmark py-3 mt-5 ">
+      <h2 class="text-center mt-2">
+        <i class="fa-solid fa-bookmark"></i>
+        Bookmark your favorite sites 
+        <i class="fa-solid fa-bookmark"></i>
+      </h2>
+      <div class="container">
+        <div class="name mb-4">
+          <label for="your-name" class="pb-2 fw-semibold">
+            <i class="fa-solid fa-book-bookmark pe-2"></i>
+            Site Name
+          </label>
+          <input type="text" id="your-name" placeholder="Bookmark Name" class="form-control">
+        </div>
+        <div class="url mb-4">
+          <label for="your-url" class="pb-2 fw-semibold">
+            <i class="fa-solid fa-book-bookmark pe-2"></i>
+            Site Name
+          </label>
+          <input type="url" id="your-url" placeholder="Website URL" class="form-control">
+        </div>
+
+        <div class=" button container d-flex flex-column justify-content-center align-items-center">
+          <button onclick="addContent()" type="button" class="btn  btn-outline-danger px-5 d-flex mb-4">Submit</button>
+        </div>
+        <div>
+          <table class="table  mx-auto w-75 mt-4 ">
+            <thead class="info text-center">
+              <th>Index</th>
+              <th>Website Name</th>
+              <th >Visit</th>
+              <th>Delete</th>
+            </thead>
+            <tbody class="text-center" id="tableBody">
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</main>
+<h1 class="text-secondary"></h1>
+
+
+
+
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./index.js"></script>
+    
+</body>
+</html>
